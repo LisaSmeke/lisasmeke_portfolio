@@ -166,11 +166,11 @@ body {
 /*Sections General*/
 .section {
   margin: 0 auto;
+  text-align: center;
 }
 h2 {
   font-size: 2.5rem;
   text-transform: uppercase;
-  text-align: center;
   padding-top: 3%;
   padding-bottom: 0;
 }
@@ -192,7 +192,6 @@ p {
   width: 60%;
   margin: 0 auto;
   padding: 0 2%;
-  text-align: center;
 }
 .line {
   font-weight: 700;
@@ -280,6 +279,7 @@ p {
 .friends-back {
   background-image: url(images/lisa-friends.svg);
 }
+
 /* WORK Section */
 .work {
   background-color: var(--secondary);
@@ -340,9 +340,9 @@ p {
   color: var(--dark);
   font-size: 1rem;
   margin: 0 auto;
-  padding: 2%;
+  padding: 1% 2% 3% 2%;
   text-align: center;
-  background-color: var(--main);
+  background-color: var(--light);
 }
 .img-container {
   position: relative;
@@ -374,27 +374,35 @@ p {
     margin: 2%;
   }
 }
-/*Skills Section*/
+
+/*SKILLS*/
 .skills {
-  background-color: var(--light);
+  background-color: var(--highlight-2);
 }
 .skills-list {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1%;
+  padding-bottom: 5%;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 1%;
-  padding-bottom: 2%;
+  justify-content: center;
 }
 .skills-list li {
+  width: 95px;
+  padding: 1% 2%;
+  margin: 1%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 1.5%;
-  font-size: 1.2em;
+  align-content: center;
+  font-size: 1.1rem;
+  font-family: var(--ff-simple);
+  border: 3px solid var(--dark);
+  background-color: var(--light);
+  border-radius: 1rem;
 }
 .skills-list li .skill-icon-green {
   color: var(--main);
@@ -406,156 +414,19 @@ p {
   color: var(--highlight-2);
 }
 
-/* Blog Section */
-/* .blog {
-  background-color: var(--light);
-}
-.blog .articles {
-  width: 90%;
-  margin: 1% auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.blog .blog-article {
-  background-color: #fff;
-  border: 2px solid black;
-  border-radius: 6px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
-  width: 48%;
-}
-.blog-img-section {
-  width: 40%;
-  padding: 2%;
-}
-.blog-img {
-  display: block;
-  width: 100%;
-  padding: 1%;
-  border-radius: 6px;
-}
-.blog-title-section {
-  width: 60%;
-  margin: 10px;
-}
-.blog-article h2 {
-  font-size: 1rem;
-  text-align: left;
-}
-.blog-article p {
-  font-size: 1rem;
-}
-.blog-article .date {
-  padding-bottom: 1%;
-}
-.blog-article .read-btn {
-  background-color: var(--yellow);
-  border: 2px solid black;
-  border-radius: 6px;
-  padding: 2%;
-  font-family: var(--ff-subtitles);
-  margin-top: 1%;
-}
-.blog-article .read-btn:hover {
-  cursor: pointer;
-  background-color: rgba(255, 191, 1, 0.6);
-}
-.art-container {
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  opacity: 0;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
-.art1-container.show-art1 {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.art2-container.show-art2 {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.art {
-  background-color: #fff;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 5% 5%;
-  width: 60%;
-  max-height: 80%;
-  max-width: 100%;
-  text-justify: inter-word;
-  overflow: scroll;
-}
-.art .close-art-btn {
-  background-color: transparent;
-  border: none;
-  color: gray;
-  font-size: 16px;
-  padding: 5px 10px;
-  margin-top: 1%;
-  margin-left: 95%;
-}
-.art .close-art-btn:hover {
-  cursor: pointer;
-  background-color: lightgray;
-  border-radius: 6px;
-}
-.art h2 {
-  margin: 0;
-}
-.art .date {
-  font-family: var(--ff-primary);
-  font-weight: 600;
-}
-.art .intro-p {
-  border-bottom: 3px solid var(--green);
-  padding-bottom: 1%;
-  padding-right: 5%;
-  font-family: var(--ff-primary);
-  font-weight: 600;
-}
-.art .art-content {
-  margin-top: 3%;
-}
-.art p {
-  font-size: 14px;
-  opacity: 0.7;
-} */
-
 /* Contact section */
 .contact {
-  background-color: var(--light);
-  text-align: center;
-}
-.contact-header-container h2 {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 2%;
-  color: var(--secondary);
-  font-size: 3rem;
-  text-transform: uppercase;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  background-color: var(--secondary);
 }
 .contact-body {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 4%;
 }
 .contact-form {
   width: 80%;
-  margin: 3% auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -564,44 +435,30 @@ p {
 }
 .contact-form-left {
   width: 50%;
-  background-image: url(./contact-img.jpg);
-  background-color: var(--dark);
-  color: var(--light);
-  filter: grayscale(100%);
+  background-image: url(./images/contact-green.svg);
+  background-color: var(--light);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
-}
-.contact-form-left h2 {
-  width: 80%;
-  margin: 15% auto;
-  font-size: 1.5rem;
-  text-align: center;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.7);
+  border: 3px solid black;
+  border-right: 0px;
 }
 .contact-form-right {
   width: 50%;
-  background-color: var(--secondary);
+  background-color: var(--light);
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   display: flex;
   flex-direction: column;
-}
-.contact-form-right h2 {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 15%;
-  font-size: 1.5rem;
-  text-align: center;
+  border: 3px solid black;
 }
 .contact-form-right p {
+  color: var(--white);
   width: 80%;
   margin: 0 auto;
   margin-top: 2%;
-  font-size: 1rem;
-  text-align: center;
 }
 .input-fields {
   width: 80%;
@@ -611,14 +468,22 @@ p {
   flex-direction: column;
 }
 .input-fields input {
-  padding: 1% 0 3% 1%;
+  padding: 2% 0 2% 2%;
   margin-bottom: 2%;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid var(--dark);
+  border-radius: 0.5rem;
+  font-family: var(--ff-main);
+  font-size: 1rem;
 }
 .input-fields textarea {
-  padding: 1% 0 20% 1%;
+  padding: 2% 0 20% 2%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid var(--dark);
+  border-radius: 0.5rem;
+  font-family: var(--ff-main);
+  font-size: 1rem;
 }
 .send-btn {
   display: inline-block;
@@ -674,186 +539,36 @@ p {
   }
 }
 
-/* .contact-info {
-  color: #000;
-  text-align: center;
-}
-
-.contact-icons {
-  display: flex;
-  list-style-type: none;
-  text-decoration: none;
-  justify-content: space-evenly;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin: 0 25%;
-}
-
-.contact-icons li a {
-  color: #fff;
-}
-
-.contact-icons li a:hover {
-  color: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact-icons .tel a:hover::after {
-  content: '+46 79-051-0137';
-  display: flex;
-  flex-direction: column;
-}
-.contact-icons .mail a:hover::after {
-  content: 'lisasmeke@gmail.com';
-  display: flex;
-  flex-direction: column;
-}
-.contact-icons .linkedin a:hover::after {
-  content: " Let's connect!";
-  display: flex;
-  flex-direction: column;
-}
-.contact-icons .github a:hover::after {
-  content: ' Check my code';
-  display: flex;
-  flex-direction: column;
-} */
-
 /* Footer */
 .footer {
-  background-color: #000;
+  background-color: var(--dark);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   justify-items: center;
-  padding: 1%;
+  padding: 2% 4%;
 }
-
 .footer .source-copy {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
 }
-
 .source-copy a {
-  color: #fff;
+  color: var(--light);
 }
-
 .source-copy .copyright {
   color: gray;
   font-size: 1rem;
 }
-
 .back-top {
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
-  font-family: var(--ff-titles);
+  color: var(--light);
+  font-family: var(--ff-main);
   font-weight: 500;
 }
-
 footer a:hover {
-  color: var(--yellow);
-}
-
-/*Admin panel*/
-#open {
-  color: #fff;
-  background-color: #000;
-  border: none;
-  text-align: left;
-  text-decoration: underline;
-  font-family: var(--ff-primary);
-  font-size: 1rem;
-}
-
-#open:hover {
-  color: var(--yellow);
-  cursor: pointer;
-}
-
-.modal-container {
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  opacity: 0;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-}
-
-.modal-container.show {
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.modal {
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: 0 2px rgba(0, 0, 0, 0.2);
-  padding: 5px 50px;
-  width: 600px;
-  max-width: 100%;
-  text-align: center;
-}
-
-.modal .close-btn {
-  background-color: transparent;
-  border: none;
-  color: gray;
-  font-size: 16px;
-  padding: 5px 10px;
-  margin-top: 10px;
-  margin-left: 100%;
-}
-
-.modal .close-btn:hover {
-  cursor: pointer;
-  background-color: lightgray;
-  border-radius: 6px;
-}
-
-.modal p {
-  font-size: 14px;
-  opacity: 0.7;
-  margin-top: 10px;
-}
-
-.modal .login-info {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin: 0 auto;
-  margin-bottom: 15%;
-}
-
-.login-info .login-input {
-  border: 2px solid black;
-  border-radius: 6px;
-  padding: 2px;
-  margin-top: 10px;
-  font-family: var(--ff-primary);
-}
-
-.login-info .sign-in {
-  background-color: var(--yellow);
-}
-
-.login-info .sign-in:hover {
-  background-color: rgba(255, 191, 1, 0.6);
-  cursor: pointer;
-}
-
-.modal .admin-img {
-  width: 60%;
-  margin: 0 auto;
+  color: var(--highlight-2);
 }
 
 /* Media queries for small devices */
@@ -861,96 +576,19 @@ footer a:hover {
   h2 {
     font-size: 1.2rem;
   }
-
   h3 {
     font-size: 1.1rem;
     padding-bottom: 0.5rem;
   }
-
   p {
     font-size: 1rem;
   }
-
   .section {
     padding: 1rem;
   }
-
   .skills-list li {
     padding: 1.5%;
     font-size: 0.8em;
-  }
-
-  .hobby {
-    width: 30%;
-  }
-
-  .hobby-icons .hobby {
-    font-size: 10px;
-  }
-
-  .click-icon {
-    width: 15%;
-  }
-
-  .click-icon:hover {
-    width: 17%;
-    border-color: var(--dark-pink);
-  }
-
-  .projects .project-title {
-    font-size: 8px;
-    text-align: center;
-  }
-
-  .projects .source-code {
-    font-size: 7px;
-  }
-
-  .form-section .podcast-form {
-    font-size: 10px;
-    width: 60%;
-  }
-
-  .blog .articles {
-    flex-direction: column;
-  }
-
-  .blog .blog-article {
-    width: 100%;
-    margin-bottom: 2%;
-  }
-
-  .blog-img-section {
-    width: 40%;
-    padding: 2%;
-  }
-
-  .blog-img {
-    display: block;
-    width: 100%;
-    padding: 1%;
-    border-radius: 6px;
-  }
-
-  .blog-title-section {
-    width: 50%;
-    margin: 10px;
-  }
-
-  .blog-article h2 {
-    font-size: 0.8rem;
-  }
-
-  .blog-article p {
-    font-size: 0.8rem;
-  }
-
-  .blog-article .date {
-    padding-bottom: 1%;
-  }
-
-  .blog-article .read-btn {
-    font-size: 0.8rem;
   }
 }
 
@@ -959,94 +597,18 @@ footer a:hover {
   h2 {
     font-size: 1.5rem;
   }
-
   h3 {
     font-size: 1.3rem;
     padding-bottom: 0.5rem;
   }
-
   p {
     font-size: 1.1rem;
   }
-
   .section {
     padding: 1rem;
   }
-
   .skills-list li {
     padding: 1.5%;
     font-size: 1em;
-  }
-
-  .hobby {
-    width: 30%;
-  }
-
-  .click-icon {
-    width: 15%;
-  }
-
-  .click-icon:hover {
-    width: 17%;
-    border-color: var(--dark-pink);
-  }
-
-  .hobby-icons .hobby {
-    font-size: 0.8rem;
-  }
-
-  .projects .project-title {
-    font-size: 12px;
-  }
-
-  .projects .source-code {
-    font-size: 10px;
-  }
-
-  .form-section .podcast-form {
-    font-size: 12px;
-    width: 60%;
-  }
-
-  .blog .articles {
-    flex-direction: column;
-  }
-
-  .blog .blog-article {
-    width: 100%;
-    margin-bottom: 2%;
-  }
-
-  .blog-img-section {
-    width: 40%;
-    padding: 2%;
-  }
-
-  .blog-img {
-    display: block;
-    width: 100%;
-    padding: 1%;
-    border-radius: 6px;
-  }
-
-  .blog-title-section {
-    width: 50%;
-    margin: 10px;
-  }
-
-  .blog-article h2 {
-    font-size: 0.9rem;
-  }
-
-  .blog-article p {
-    font-size: 0.9rem;
-  }
-
-  .blog-article .date {
-    padding-bottom: 1%;
-  }
-
-  .blog-article .read-btn {
-    font-size: 0.9rem;
   }
 }
