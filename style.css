@@ -24,6 +24,11 @@ body {
 /*Navigation Menu*/
 .top-menu {
   background-color: var(--dark);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 .navbar {
   background-color: var(--dark);
@@ -33,11 +38,6 @@ body {
   align-items: center;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
   width: 90%;
   margin: 0 auto;
 }
