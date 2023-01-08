@@ -184,7 +184,8 @@ p {
 }
 /*ABOUT */
 .about {
-  background-color: var(--highlight-2);
+  background-color: var(--main);
+  border-top: 10px solid black;
 }
 .about-intro {
   width: 60%;
@@ -271,21 +272,21 @@ p {
   border: 3px solid var(--light);
 }
 .running-back {
-  background-image: url(images/lisa-running.svg);
+  background-image: url(images/lisa-running.webp);
 }
 .reading-back {
-  background-image: url(images/lisa-reading.svg);
+  background-image: url(images/lisa-reading.webp);
 }
 .nature-back {
-  background-image: url(images/lisa-nature.svg);
+  background-image: url(images/lisa-nature.webp);
 }
 .friends-back {
-  background-image: url(images/lisa-friends.svg);
+  background-image: url(images/lisa-friends.webp);
 }
 
 /* WORK */
 .work {
-  background-color: var(--secondary);
+  background-color: var(--main);
 }
 .work-intro {
   display: flex;
@@ -353,7 +354,7 @@ p {
 
 /*SKILLS*/
 .skills {
-  background-color: var(--highlight-2);
+  background-color: var(--main);
 }
 .skills-list {
   width: 90%;
