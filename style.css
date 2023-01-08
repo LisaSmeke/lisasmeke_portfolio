@@ -184,7 +184,7 @@ p {
 }
 /*ABOUT */
 .about {
-  background-color: var(--main);
+  background-color: var(--highlight-2);
   border-top: 10px solid black;
 }
 .about-intro {
@@ -286,7 +286,7 @@ p {
 
 /* WORK */
 .work {
-  background-color: var(--main);
+  background-color: var(--highlight-2);
 }
 .work-intro {
   display: flex;
@@ -393,7 +393,7 @@ p {
 
 /* CONTACT */
 .contact {
-  background-color: var(--main);
+  background-color: var(--highlight-2);
 }
 .contact-body {
   width: 80%;
